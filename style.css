@@ -125,8 +125,8 @@ iframe{
 }
 .card1{
     display: none;
-    width: 600px;
-    height: 600px;
+    width: 90%;
+    height: 50vh;
     border: 3px solid black;
     border-radius: 3px;
     background-color: rgb(180, 180, 180);
@@ -145,7 +145,7 @@ iframe{
     position: absolute;
     top: 1%;
     left: 55%;
-    width: 70vh;
+    width: 40%;
     height: 8vh ;
     border-radius: 30px;
     background-color: var(--cor3);
@@ -177,8 +177,8 @@ iframe{
 }
 .card2{
     display: none;
-    width: 600px;
-    height: 600px;
+    width: 90%;
+    height: 50vh;
     border: 3px solid black;
     border-radius: 3px;
     background-color: rgb(180, 180, 180);
@@ -197,7 +197,7 @@ iframe{
     position: absolute;
     top: 1%;
     left: 55%;
-    width: 70vh;
+    width: 40%;
     height: 8vh ;
     border-radius: 30px;
     background-color: var(--cor3);
@@ -228,8 +228,8 @@ div.ch2:hover .card2{
 }
 .card3{
     display: none;
-    width: 600px;
-    height: 600px;
+    width: 90%;
+    height: 50vh;
     border: 3px solid black;
     border-radius: 3px;
     background-color: rgb(180, 180, 180);
@@ -248,8 +248,8 @@ div.ch2:hover .card2{
     position: absolute;
     top: 1%;
     left: 55%;
-    width: 70vh;
-    height: 8vh ;
+    width: 40%;
+    height: 8vh;
     border-radius: 30px;
     background-color: var(--cor3);
     opacity: 0.8;
