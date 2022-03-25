@@ -3,7 +3,7 @@
 @font-face {
     font-family: "Herculanum", serif;
     src: url('fontes/avatarfont.ttf') format("truetype");
-    font-family: "Ninja", serif;
+    font-family: "Ninja Naruto", sans-serif;
     src: url('fontes/narutofont.ttf') format("truetype");
     font-family: "OnePiece", serif;
     src: url('fontes/opfont.ttf') format("truetype");
@@ -14,6 +14,9 @@
     - Embedded-opentype
     - Truetype-aat (Apple Advanced Typography)
     - svg */
+}
+*{
+    max-width: 100%;
 }
 :root {
     --cor0: #40A4CC;
@@ -27,7 +30,7 @@
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Bungee', cursive;
     --fonte-onepiece: 'OnePiece', serif;
-    --fonte-naruto: 'Ninja', serif;
+    --fonte-naruto: 'Ninja Naruto', sans-serif;
     --fonte-avatar: 'Herculanum', serif;
 }
 
@@ -36,7 +39,7 @@ body{
     min-height: 100vh;
     background-image: linear-gradient(to bottom right, var(--cor0), var(--cor1), var(--cor2), var(--cor3));
     background-size: cover;
-    background-position: 100%;
+    background-position: center center;
     background-attachment: fixed;
 }
 
@@ -44,19 +47,20 @@ header{
     position: relative;
     background-image: url('imagens/background.jpg');
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
 
     margin: 10px;
     padding: 10px;
-    height: 92vh;
+    height: 100vh;
     border-radius: 10px;
     
 }
 #headertitle{
     background-size: 100% 100%;
-    width: auto;
+    background-attachment: fixed;
+    width: 90%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -64,20 +68,23 @@ header{
     font-size: 8vw;
     font-weight: bolder;
     font-variant: small-caps;
+    text-align: center;
     transform: translate(-50%, -50%);
     color: var(--cor3);
     -webkit-text-stroke-width: 2.5px;
     -webkit-text-stroke-color: #000000d7
 }
 #headersub{
-    width: 98%;
+    background-attachment: fixed;
+    width: 70%;
     position: absolute;
     top: 70%;
-    left: 50%;
+    left: 38%;
     font-family: var(--fonte-destaque);
     font-weight: bolder;
     font-size: 3vw;
     font-variant: small-caps;
+    text-align: center;
     transform: translate(-30%, -50%);
     color: var(--cor6);
     -webkit-text-stroke-width: 2.5px;
@@ -191,7 +198,7 @@ iframe{
     color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
-    font-family: 'Ninja', serif
+    font-family: var(--fonte-naruto);
 }
 .ch2{
     position: absolute;
@@ -206,7 +213,7 @@ iframe{
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
     font-size: 3vw;
-    font-family: 'Ninja', monospace;
+    font-family: var(--fonte-naruto);
     text-align: center;
 }
 div.ch2:hover .card2{
